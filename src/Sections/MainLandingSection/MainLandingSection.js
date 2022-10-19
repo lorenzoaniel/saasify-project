@@ -22,10 +22,12 @@ import { mainLandingDashboardDivStyle } from "../../Styles/main-landing-dashboar
 import { mainLandingDashboardImgStyle } from "../../Styles/main-landing-dashboard-style/main-landing-dashboard-img-style/main-landing-dashboard-img-style.js";
 
 import dashboardimg from "../../Assets/Imgs/dashboard_saasify_example.png";
+import Brands from "../../Components/MainLandingSection/Brands/Brands";
 
 const MainLandingSectionContainer = styled.div`
 	height: 2502px;
 	width: 100%;
+	/* background-color: pink; */
 `;
 
 const MainLandingSectionWaveContainer = styled.div`
@@ -90,6 +92,7 @@ const MainLandingSection = () => {
 				altprop={"dashboard example"}
 				srcprop={dashboardimg}
 			/>
+			<Brands />
 		</MainLandingSectionContainer>
 	);
 };
