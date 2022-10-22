@@ -1,6 +1,9 @@
 import { css } from "styled-components";
 
 export const mainLandingHeadingStyle = css`
+	height: 385px; //247px base plus margin
+	width: 992px;
+
 	font-family: var(--DefaultFont-inter);
 	font-size: 72px;
 	line-height: 80px;
@@ -8,9 +11,7 @@ export const mainLandingHeadingStyle = css`
 	letter-spacing: -0.03rem;
 	color: rgba(255, 255, 255, 1);
 	text-align: center;
-	max-width: 964px;
-	grid-area: ${(props) => props.className};
+	word-break: break-word;
 
-	justify-self: center;
-	align-self: center;
+	padding-top: 138px;
 `;
