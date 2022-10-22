@@ -1,16 +1,16 @@
 import { css } from "styled-components";
 
 export const mainLandingSecondHeadingStyle = css`
+	height: 100px; //60px base plus margin
+	width: 579px;
+
 	font-family: var(--DefaultFont-inter);
 	font-size: 20px;
 	line-height: 30px;
 	font-weight: 500;
 	color: rgba(255, 255, 255, 1);
 	text-align: center;
-	max-width: 575px;
 	letter-spacing: -0.02rem;
-	grid-area: ${(props) => props.className};
 
-	justify-self: center;
-	align-self: center;
+	padding-top: 40px;
 `;
