@@ -3,7 +3,7 @@ import { css } from "styled-components";
 export const mainLandingEmailbarButtonStyle = css`
 	border: none;
 	width: 171px;
-	height: 54px;
+	height: 50px;
 	border-radius: 42px;
 	background: var(--main-landing-emailbar-button-style);
 
