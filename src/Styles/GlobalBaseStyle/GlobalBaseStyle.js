@@ -13,8 +13,6 @@ export const GlobalBaseStyle = createGlobalStyle`
     --pageMenuLinksButtonStyle-default: rgba(255,255,255,1);
     --pageMenuLogoStyle-default: rgba(255,255,255,1);
 
-
-    --MainLandingSection-bg-gradient: linear-gradient(108.21deg, #2272FF 0%, #0D03C3 97.89%);
     --main-landing-emailbar-button-style: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
 
     /* * * */
@@ -23,9 +21,10 @@ export const GlobalBaseStyle = createGlobalStyle`
     color: black;
     box-sizing: border-box;
 
+    /* flex-shrink: 0; */
+
     scrollbar-width: none;
     overflow-y: scroll; 
-    
   }
 
   html {
