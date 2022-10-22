@@ -6,14 +6,14 @@ import DefaultImgContainer from "../../Common/DefaultImgContainer/DefaultImgCont
 import { mainLandingBrandsDivStyle } from "../../../Styles/main-landing-brands-style/main-landing-brands-div-style/main-landing-brands-div-style.js";
 import { mainLandingBrandsImgStyle } from "../../../Styles/main-landing-brands-style/main-landing-brands-img-style/main-landing-brands-img-style.js";
 
-import slackimg from "../../../Assets/Imgs/slackicon.png";
-import airbnbimg from "../../../Assets/Imgs/airbnbicon.png";
-import amazonimg from "../../../Assets/Imgs/amazonicon.png";
-import googleimg from "../../../Assets/Imgs/googleicon.png";
-import netfliximg from "../../../Assets/Imgs/netflixicon.png";
+import slackimg from "../../../Assets/Imgs/Brands/slackicon.png";
+import airbnbimg from "../../../Assets/Imgs/Brands/airbnbicon.png";
+import amazonimg from "../../../Assets/Imgs/Brands/amazonicon.png";
+import googleimg from "../../../Assets/Imgs/Brands/googleicon.png";
+import netfliximg from "../../../Assets/Imgs/Brands/netflixicon.png";
 
 const BrandsContainer = styled.div`
-	width: 80%;
+	width: 100%;
 	height: auto;
 	margin-top: 150px;
 	display: flex;
