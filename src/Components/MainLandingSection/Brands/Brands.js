@@ -13,13 +13,13 @@ import googleimg from "../../../Assets/Imgs/googleicon.png";
 import netfliximg from "../../../Assets/Imgs/netflixicon.png";
 
 const BrandsContainer = styled.div`
-	width: 1154px;
-	height: 100px;
-	margin: 0 auto;
-	margin-top: 13%;
+	width: 80%;
+	height: auto;
+	margin-top: 150px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	flex-wrap: wrap;
 `;
 
 const Brands = () => {
