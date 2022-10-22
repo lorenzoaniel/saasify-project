@@ -13,8 +13,13 @@ const DefaultImgContainerImg = styled.img`
 const DefaultImgContainer = (props) => {
 	const { classnameprop, srcprop, altprop, customstyledivprop, customstyleimgprop } = props;
 	return (
-		<DefaultImgContainerDiv customstyledivprop={customstyledivprop} className={classnameprop}>
-			<DefaultImgContainerImg customstyleimgprop={customstyleimgprop} src={srcprop} alt={altprop} />
+		<DefaultImgContainerDiv customstyledivprop={customstyledivprop}>
+			<DefaultImgContainerImg
+				id={classnameprop}
+				customstyleimgprop={customstyleimgprop}
+				src={srcprop}
+				alt={altprop}
+			/>
 		</DefaultImgContainerDiv>
 	);
 };
