@@ -5,22 +5,24 @@ import DefaultButton from "../../Common/DefaultButton/DefaultButton";
 import { mainLandingEmailbarButtonStyle } from "../../../Styles/main-landing-emailbar-button-style/main-landing-emailbar-button-style.js";
 
 const EmailBarContainer = styled.div`
-	background-color: rgba(255, 255, 255, 1);
+	height: 67px; //67px base plus margin
 	width: 575px;
-	height: 67px;
-	display: flex;
+
+	background-color: rgba(255, 255, 255, 1);
 	border-radius: 5rem;
 	padding: 0.5rem;
-	border: none;
+	border: 0.1rem solid rgba(240, 240, 240, 1);
+	box-shadow: 0 0 1rem 0.1rem rgba(100, 100, 100, 0.5);
+
+	display: flex;
 	align-items: center;
-	grid-area: registeremail;
-	align-self: center;
-	justify-self: center;
+
+	margin-top: 40px;
 `;
 
 const EmailBarIconContainer = styled.div`
 	width: 21.2px;
-	height: 19px;
+	height: 25px;
 	border: none;
 	margin-left: 1rem;
 	svg {
@@ -31,16 +33,19 @@ const EmailBarIconContainer = styled.div`
 `;
 
 const EmailBarInput = styled.input`
+	width: calc(100% - 21.2px - 220px);
+	height: 25px;
+
 	color: rgba(0, 0, 0, 0.7);
 	font-family: var(--DefaultFont-inter);
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 19px;
-	height: 25px;
+
 	border: none;
-	margin: 0 1rem;
-	width: calc(100% - 21.2px - 171px);
 	outline: none;
+
+	margin: 0 1rem;
 `;
 
 const EmailBar = (props) => {
