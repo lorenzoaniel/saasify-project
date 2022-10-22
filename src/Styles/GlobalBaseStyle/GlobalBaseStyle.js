@@ -38,6 +38,7 @@ export const GlobalBaseStyle = createGlobalStyle`
         #root {
           height: inherit;
           width: inherit;
+          background: rgba(250, 250, 250, 1);
         }
       }
     }
