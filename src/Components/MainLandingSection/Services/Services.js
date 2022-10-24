@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import DefaultButton from "../../Common/DefaultButton/DefaultButton";
 import DefaultHeading from "../../Common/DefaultHeading/DefaultHeading";
 import DefaultImgContainer from "../../Common/DefaultImgContainer/DefaultImgContainer";
+import ServiceReadMoreBtn from "./ServiceReadMoreBtn/ServiceReadMoreBtn";
 
 import { mainLandingServicesMainTitleStyle } from "../../../Styles/main-landing-services-style/main-landing-services-main-title-style/main-landing-services-main-title-style.js";
 import { mainLandingServicesServicecontainerIconStyle } from "../../../Styles/main-landing-services-style/main-landing-services-servicecontainer-style/main-landing-services-servicecontainer-icon-style/main-landing-services-servicecontainer-icon-style.js";
@@ -79,7 +79,7 @@ const Services = (props) => {
 							"The process of managing a task through its life cycle. It involves planning, testing, tracking."
 						}
 					/>
-					<DefaultButton btntitleprop={"Read More"} />
+					<ServiceReadMoreBtn />
 				</ServicesContainer>
 				<ServicesContainer className={"service-design-system"}>
 					<DefaultImgContainer
@@ -97,7 +97,7 @@ const Services = (props) => {
 							"The technology by which a process or procedure is preformed with minimal human assistance."
 						}
 					/>
-					<DefaultButton btntitleprop={"Read More"} />
+					<ServiceReadMoreBtn />
 				</ServicesContainer>
 				<ServicesContainer className={"service-best-practice"}>
 					<DefaultImgContainer
@@ -115,7 +115,7 @@ const Services = (props) => {
 							"Creating plan to spend your money, This spending planer is called a budgeting tool for business."
 						}
 					/>
-					<DefaultButton btntitleprop={"Read More"} />
+					<ServiceReadMoreBtn />
 				</ServicesContainer>
 			</ServicesContainerContainer>
 		</ServicesMainContainer>
