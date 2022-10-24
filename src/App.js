@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ConversionSection from "./Sections/ConversionSection/ConversionSection";
 import MainLandingSection from "./Sections/MainLandingSection/MainLandingSection";
 import { GlobalBaseStyle } from "./Styles/GlobalBaseStyle/GlobalBaseStyle";
 
@@ -10,6 +11,7 @@ function App() {
 			<GlobalBaseStyle />
 			<AppContainer className={"App-Container"}>
 				<MainLandingSection />
+				<ConversionSection />
 			</AppContainer>
 		</>
 	);
