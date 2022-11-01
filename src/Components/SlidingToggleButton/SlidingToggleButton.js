@@ -69,14 +69,18 @@ const SlidingToggleButton = () => {
 const SlidingToggleButtonContainer = styled.div`
 	width: 300px;
 	height: 82px;
-	background-color: purple;
+
 	margin-top: 34px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 `;
 
 const SlidingToggleButtonEclipse = styled.div`
 	width: 192px;
 	height: 48px;
-	background: #f6f5ff;
+	background: rgb(236, 235, 255);
 	border-radius: 48px;
 	display: flex;
 	justify-content: space-around;
