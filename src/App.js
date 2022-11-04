@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import ConversionSection from "./Sections/ConversionSection/ConversionSection";
+import FooterSection from "./Sections/FooterSection/FooterSection";
 import MainLandingSection from "./Sections/MainLandingSection/MainLandingSection";
 import PlansTestimonialSection from "./Sections/PlansTestimonialSection/PlansTestimonialSection";
 import VideoSection from "./Sections/VideoSection/VideoSection";
@@ -18,6 +19,7 @@ function App() {
 				<ConversionSection />
 				<VideoSection />
 				<PlansTestimonialSection />
+				<FooterSection />
 			</AppContainer>
 		</>
 	);
