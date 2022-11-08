@@ -4,8 +4,14 @@ import styled from "styled-components";
 import DefaultHeading from "../../Components/Common/DefaultHeading/DefaultHeading";
 import PricingCard from "../../Components/PricingCard/PricingCard";
 import SlidingToggleButton from "../../Components/SlidingToggleButton/SlidingToggleButton";
+import TestimonyCard from "../../Components/TestimonyCard/TestimonyCard";
 
 import { plansTestimonialSectionPricingMainheadingStyle } from "../../Styles/plans-testimonial-section-style/plans-testimonial-section-pricing-style/plans-testimonial-section-pricing-mainheading-style/plans-testimonial-section-pricing-mainheading-style.js";
+import { plansTestimonialSectionTestimonialsMainheadingStyle } from "../../Styles/plans-testimonial-section-style/plans-testimonial-section-testimonials-style/plans-testimonial-section-testimonials-mainheading-style/plans-testimonial-section-testimonials-mainheading-style.js";
+
+import profile1 from "../../Assets/Imgs/TestimonialSection/profilepics/profile1.png";
+import profile2 from "../../Assets/Imgs/TestimonialSection/profilepics/profile2.png";
+import profile3 from "../../Assets/Imgs/TestimonialSection/profilepics/profile3.png";
 
 const PlansTestimonialSectionContainer = styled.div`
 	width: 100%;
@@ -40,7 +46,21 @@ const PlansTestimonialSectionTestimonialContainer = styled.div`
 	width: 80%;
 	height: 483px;
 	margin-top: 150px;
-	background-color: yellow;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+`;
+
+const PlansTestimonialSectionTestimonialMiniContainer = styled.div`
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	column-gap: 30px;
+	padding: 0 20px;
 `;
 
 const PlansTestimonialSection = () => {
@@ -93,7 +113,39 @@ const PlansTestimonialSection = () => {
 				</PlansTestimonialSectionPricingMiniContainer>
 			</PlansTestimonialSectionPricingContainer>
 			<PlansTestimonialSectionTestimonialContainer>
-				<DefaultHeading headingtitleprop={"What people are saying about us"} />
+				<DefaultHeading
+					customstyleprop={plansTestimonialSectionTestimonialsMainheadingStyle}
+					headingtitleprop={"What people are saying about us"}
+				/>
+				<PlansTestimonialSectionTestimonialMiniContainer>
+					<TestimonyCard
+						profilenameProp={"Kartik Bansal"}
+						profilelocationprop={"Kota, Rajasthan"}
+						imgsrcprop={profile1}
+						descriptionProp={
+							"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+						}
+						numberOfStarsProp={5}
+					/>
+					<TestimonyCard
+						profilenameProp={"Anil Dvivedi"}
+						profilelocationprop={"New Delhi"}
+						imgsrcprop={profile2}
+						descriptionProp={
+							"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+						}
+						numberOfStarsProp={4}
+					/>
+					<TestimonyCard
+						profilenameProp={"Srjan Sirasikar"}
+						profilelocationprop={"Bhadrak"}
+						imgsrcprop={profile3}
+						descriptionProp={
+							"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+						}
+						numberOfStarsProp={3}
+					/>
+				</PlansTestimonialSectionTestimonialMiniContainer>
 			</PlansTestimonialSectionTestimonialContainer>
 		</PlansTestimonialSectionContainer>
 	);
