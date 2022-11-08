@@ -6,7 +6,7 @@ import DefaultImgContainer from "../Common/DefaultImgContainer/DefaultImgContain
 import DefaultHeading from "../Common/DefaultHeading/DefaultHeading";
 
 import { plansTestimonialSectionTestimonialsCardProfilenameStyle } from "../../Styles/plans-testimonial-section-style/plans-testimonial-section-testimonials-style/plans-testimonial-section-testimonials-card-style/plans-testimonial-section-testimonials-card-profilename-style/plans-testimonial-section-testimonials-card-profilename-style.js";
-import { plansTestimonialSectionTestimonialsCardProfilelocationStyle } from "../../Styles/plans-testimonial-section-style/plans-testimonial-section-testimonials-style/plans-testimonial-section-testimonials-card-style/plans-testimonial-section-testimonials-card-profilelocation-style/testimonials-card-profilelocation-style.js";
+import { plansTestimonialSectionTestimonialsCardProfilelocationStyle } from "../../Styles/plans-testimonial-section-style/plans-testimonial-section-testimonials-style/plans-testimonial-section-testimonials-card-style/testimonials-card-profilelocation-style/testimonials-card-profilelocation-style.js";
 
 import startimg from "../../Assets/Imgs/TestimonialSection/star.png";
 
