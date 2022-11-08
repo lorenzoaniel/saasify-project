@@ -28,7 +28,7 @@ export const GlobalBaseStyle = createGlobalStyle`
   }
 
   html {
-      height: 6871px;
+      height: fit-content;
       width: 100%;
 
       body {
