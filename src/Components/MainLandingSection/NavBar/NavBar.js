@@ -9,6 +9,11 @@ const NavBarContainer = styled.div`
 	align-items: center;
 
 	padding-top: 39px;
+
+	@media screen and (max-width: 958px) {
+		flex-direction: column;
+		justify-content: space-between;
+	}
 `;
 
 const NavBar = (props) => {

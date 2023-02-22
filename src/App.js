@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useState, useEffect } from "react";
 
 import ConversionSection from "./Sections/ConversionSection/ConversionSection";
 import FooterSection from "./Sections/FooterSection/FooterSection";
@@ -11,6 +12,26 @@ import { GlobalBaseStyle } from "./Styles/GlobalBaseStyle/GlobalBaseStyle";
 const AppContainer = styled.div``;
 
 function App() {
+	const [screenSize, getDimension] = useState({
+		dynamicWidth: window.innerWidth,
+		dynamicHeight: window.innerHeight,
+	});
+
+	const setDimension = () => {
+		getDimension({
+			dynamicWidth: window.innerWidth,
+			dynamicHeight: window.innerHeight,
+		});
+	};
+
+	useEffect(() => {
+		window.addEventListener("resize", setDimension);
+
+		return () => {
+			window.removeEventListener("resize", setDimension);
+		};
+	}, [screenSize]);
+
 	return (
 		<>
 			<GlobalBaseStyle />
